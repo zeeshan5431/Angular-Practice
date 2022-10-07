@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: `<apple></apple>`,
-  template: `<h2> APPLE </h2>`,
-  styles: [`h2{
-    color: red;
-  }`]
+  // these are the three ways to use component
+  // selector: `apple`,
+  // selector: `.apple`,
+  selector: '[apple]',
+  templateUrl: "./app.component.html",
+  styleUrls: ['./app.component.css']
 })
 
  export class AppComponent{
