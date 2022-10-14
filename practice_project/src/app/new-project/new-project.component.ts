@@ -10,8 +10,14 @@ export class NewProjectComponent  {
   age:number = 24;
   salary:number = 100;
   btnColor:string;
+  isDisable:boolean = true;
 
   constructor(){
+
+    setTimeout(() => {
+      this.isDisable = false;
+    }, 3000);
+
     const colors = ["red","yellow","blue","neon"];
     this.btnColor = "btn "+colors[Math.floor((Math.random() * 5))];
   };
