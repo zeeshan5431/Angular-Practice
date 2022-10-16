@@ -31,6 +31,7 @@ export class NewProjectComponent  {
   }
 
   getInput(e:any){
-     console.log(e.target.value)
+    //  console.log(e.target.value);
+    this.inputValue = e.target.value;
   }
 }
